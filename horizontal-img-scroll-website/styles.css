@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+
+/* Define animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(-100px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes scaleIn {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Apply animations to elements */
+.bgimg-1 {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-me-text {
+  animation: slideIn 1s ease-in-out;
+}
+
+.fa-camera-retro {
+  animation: rotate 2s linear infinite;
+}
+
+.w3-button {
+  animation: scaleIn 0.5s ease-in-out;
+}
+
+#scroll img {
+    animation: scaleIn 0.5s ease-in-out;
+  }
+  
+  /* Additional animations */
+  #scroll img:nth-child(odd) {
+    animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out;
+  }
+  
+  #scroll img:nth-child(even) {
+    animation: fadeIn 1s ease-in-out, slideFromRight 1s ease-in-out;
+  }
+  /* General styles */
+body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+
+  /* Animations */
+  @keyframes fadeInUp {
+    /* Animation for fading in elements from bottom */
+  }
+  
+  @keyframes fadeInLeft {
+    /* Animation for fading in elements from left */
+  }
+  
+  @keyframes fadeInRight {
+    /* Animation for fading in elements from right */
+  }
+  
+  @keyframes fadeIn {
+    /* Generic animation for fading in elements */
+  }
+  
+  @keyframes scaleIn {
+    /* Animation for scaling in elements */
+  }
+  
+  @keyframes rotateIn {
+    /* Animation for rotating elements */
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    /* Responsive styles for smaller screens */
+  }
+  
+  /* Attractive font sizes and colors */
+  /* Navbar */
+  .w3-bar-item {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Logo Text */
+  #city-life {
+    font-size: 48px;
+    color: #fff;
+  }
+  
+  /* Section headings */
+  h3 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  /* Text content */
+  .about-me-text {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  
+  

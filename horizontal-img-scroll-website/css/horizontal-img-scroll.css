@@ -1,0 +1,104 @@
+/* SPECIAL NOTES: Some images may not show if opened locally. HTML file must load on a local dev server or live on the web */
+
+/* Font styles */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+}
+
+/* Body and HTML styling */
+body, html {
+  height: 100%;
+  color: rgb(53, 52, 52);
+  line-height: 1.8;
+  background-color: #d6d2d2 !important;
+}
+
+/* Text color for about-me section */
+.about-me-text {
+  color: black !important;
+  font-weight: bold;
+}
+
+/* Parallax effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image in header section (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/img/nyc-hero-img.jpg');
+  min-height: 100%;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Background transparent color for text logo text */
+#city-life {
+  background-color: rgba(7, 7, 19, 0.658) !important;
+}
+
+/* Third image (ABOUT) */
+.bgimg-3 {
+  background-image: url("/img/nyc-water-view.jpg");
+  min-height: 200px;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Letter spacing for wide elements */
+.w3-wide {
+  letter-spacing: 10px;
+}
+
+/* Cursor style for hoverable elements */
+.w3-hover-opacity {
+  cursor: pointer;
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+/* Padding for icon elements */
+#icon-padding {
+  padding: 5px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+/* Custom scrollbar styling */
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(105, 105, 105); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 102, 255); 
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000cb3; 
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

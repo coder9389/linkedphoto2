@@ -1,0 +1,37 @@
+/* CSS styles for the horizontal scrolling */
+#scroll {
+   width: 95%;
+   height: 180px;
+   margin: 100px auto;
+   background: #f4f4f4;
+   border: 1px solid #000;
+   overflow-y: hidden;
+   white-space: nowrap;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.422);
+   display: flex;
+   animation: slideIn 1s ease-in-out; /* Animation for horizontal slide-in effect */
+ }
+ 
+ #scroll img {
+   margin: 10px 5px 0 5px;
+   max-width: 100%;
+   max-height: 100%;
+   transition: opacity 0.3s ease; /* Transition for opacity change on hover */
+ }
+ 
+ #scroll img:hover {
+   opacity: 0.8;
+ }
+ 
+ /* Keyframes for slide-in animation */
+ @keyframes slideIn {
+   from {
+     transform: translateX(-100%);
+     opacity: 0;
+   }
+   to {
+     transform: translateX(0);
+     opacity: 1;
+   }
+ }
+ 
